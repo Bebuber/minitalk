@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 11:04:01 by bebuber           #+#    #+#             */
-/*   Updated: 2024/06/25 15:58:42 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/06/25 17:30:49 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ int	main(int argc, char **argv)
 		}
 	}
 	else
-		error("Error: wrong number of arguments\n \
-Usage: ./client [PID] [message]\n");
+		error("Usage: ./client [PID] [message]\n");
 	return (0);
 }

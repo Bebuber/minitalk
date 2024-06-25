@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 11:04:12 by bebuber           #+#    #+#             */
-/*   Updated: 2024/06/25 16:54:46 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/06/25 17:33:38 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	error(char *str)
 
 void	ft_handler(int signal)
 {
-	static int		c;
-	static int		letter;
+	static int		c = 0;
+	static char		letter = 0;
 
 	if (signal == SIGUSR2)
 		letter |= (1 << c);
@@ -50,6 +50,5 @@ int	main(int argc, char **argv)
 		signal(SIGUSR2, ft_handler);
 		pause();
 	}
-
 	return (0);
 }
